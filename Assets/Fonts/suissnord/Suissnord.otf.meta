@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 15c49785f3262445bb2cd5b9f360badf
+timeCreated: 1482866717
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Suissnord
+  fontNames:
+  - Suissnord
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,9 +1,11 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
+﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/BallControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/WheelSelector.cs">
     <Files>
-      <File FileName="Assets/BallControl.cs" Line="36" Column="58" />
-      <File FileName="Assets/FollowBall.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/WheelSelector.cs" Line="80" Column="11" />
+      <File FileName="Assets/SelectionGroup.cs" Line="28" Column="1" />
+      <File FileName="Assets/Scripts/SettingsManager.cs" Line="286" Column="1" />
+      <File FileName="Assets/Scripts/SelectableItem.cs" Line="9" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

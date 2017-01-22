@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/testScenes/scene1.unity
+- path: Assets/testScenes/BallSelection.unity
   isLoaded: 1
   isActive: 1

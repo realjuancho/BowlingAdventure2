@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: ce697fff20213472da0f9d384c5f2082
+timeCreated: 1483673316
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Ball_MeshPart0
+    100002: Ball_MeshPart1
+    100004: Ball_MeshPart2
+    100006: Ball_MeshPart3
+    100008: //RootNode
+    100010: Ball
+    100012: Ball.001
+    100014: Ball.002
+    100016: Ball.003
+    100018: Ball.004
+    100020: Ball.005
+    100022: Ball.006
+    100024: Ball.007
+    100026: Ball.008
+    100028: Ball.009
+    100030: Ball.010
+    100032: Ball.011
+    100034: Ball001
+    100036: Ball002
+    100038: Ball003
+    100040: Ball004
+    100042: Ball005
+    100044: Ball006
+    100046: Ball007
+    100048: Ball008
+    100050: Ball009
+    100052: Ball010
+    100054: Ball011
+    100056: Ball012
+    400000: Ball_MeshPart0
+    400002: Ball_MeshPart1
+    400004: Ball_MeshPart2
+    400006: Ball_MeshPart3
+    400008: //RootNode
+    400010: Ball
+    400012: Ball.001
+    400014: Ball.002
+    400016: Ball.003
+    400018: Ball.004
+    400020: Ball.005
+    400022: Ball.006
+    400024: Ball.007
+    400026: Ball.008
+    400028: Ball.009
+    400030: Ball.010
+    400032: Ball.011
+    400034: Ball001
+    400036: Ball002
+    400038: Ball003
+    400040: Ball004
+    400042: Ball005
+    400044: Ball006
+    400046: Ball007
+    400048: Ball008
+    400050: Ball009
+    400052: Ball010
+    400054: Ball011
+    400056: Ball012
+    2300000: Ball_MeshPart0
+    2300002: Ball_MeshPart1
+    2300004: Ball_MeshPart2
+    2300006: Ball_MeshPart3
+    2300008: Ball
+    2300010: Ball.001
+    2300012: Ball.002
+    2300014: Ball.003
+    2300016: Ball.004
+    2300018: Ball.005
+    2300020: Ball.006
+    2300022: Ball.007
+    2300024: Ball.008
+    2300026: Ball.009
+    2300028: Ball.010
+    2300030: Ball.011
+    2300032: Ball001
+    2300034: Ball002
+    2300036: Ball003
+    2300038: Ball004
+    2300040: Ball005
+    2300042: Ball006
+    2300044: Ball007
+    2300046: Ball008
+    2300048: Ball009
+    2300050: Ball010
+    2300052: Ball011
+    2300054: Ball012
+    3300000: Ball_MeshPart0
+    3300002: Ball_MeshPart1
+    3300004: Ball_MeshPart2
+    3300006: Ball_MeshPart3
+    3300008: Ball
+    3300010: Ball.001
+    3300012: Ball.002
+    3300014: Ball.003
+    3300016: Ball.004
+    3300018: Ball.005
+    3300020: Ball.006
+    3300022: Ball.007
+    3300024: Ball.008
+    3300026: Ball.009
+    3300028: Ball.010
+    3300030: Ball.011
+    3300032: Ball001
+    3300034: Ball002
+    3300036: Ball003
+    3300038: Ball004
+    3300040: Ball005
+    3300042: Ball006
+    3300044: Ball007
+    3300046: Ball008
+    3300048: Ball009
+    3300050: Ball010
+    3300052: Ball011
+    3300054: Ball012
+    4300000: Ball_MeshPart0
+    4300002: Ball_MeshPart1
+    4300004: Ball_MeshPart2
+    4300006: Ball_MeshPart3
+    4300008: Ball.011
+    4300010: Ball.010
+    4300012: Ball.009
+    4300014: Ball.008
+    4300016: Ball.007
+    4300018: Ball.006
+    4300020: Ball.005
+    4300022: Ball.004
+    4300024: Ball.003
+    4300026: Ball.002
+    4300028: Ball.001
+    4300030: Ball
+    4300032: Ball003
+    4300034: Ball004
+    4300036: Ball005
+    4300038: Ball006
+    4300040: Ball007
+    4300042: Ball008
+    4300044: Ball009
+    4300046: Ball010
+    4300048: Ball011
+    4300050: Ball012
+    4300052: Ball001
+    4300054: Ball002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

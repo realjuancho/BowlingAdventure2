@@ -11,10 +11,10 @@ public class BallControl : MonoBehaviour {
 	[Range(-3.0f, 3.0f)]
 	public float xPitch = 0.0f;
 	public float xPitchSensitivity = 0.1f;
-	public float MaxOutOfBoundsTime = 2.0f;
+	public float MaxOutOfBoundsTime = 5.0f;
 	public float MinTimeNeededToTouchBallAndSetRolling = 1.0f;
 	public float BallTouchSensitivity = 0.1f;
-
+	public float arrowDistance = 0.1f;
 
     private Rigidbody rb;
     WaypointCollection wpc;
@@ -24,8 +24,12 @@ public class BallControl : MonoBehaviour {
     float timeSinceOutOfBounds = 0.0f;
     float timeSinceTouchingBall = 0.0f;
 
+
     Bounds bounds;
     bool ballGrounded = false;
+
+    ArrowPointer arrowPointer;
+    Quaternion arrowOriginRotation;
 
     public enum BallState { Idle, OutOfBounds, Rolling };
     public BallState ballState;
@@ -39,6 +43,10 @@ public class BallControl : MonoBehaviour {
         startPosition = GameObject.FindObjectOfType<StartPosition>();
 
         bounds = GetComponent<SphereCollider>().bounds;
+
+        arrowPointer = GetComponentInChildren<ArrowPointer>();
+        arrowOriginRotation = arrowPointer.transform.rotation;
+        arrowPointer.gameObject.SetActive(false);
     }
 
     void LateUpdate ()
@@ -51,17 +59,24 @@ public class BallControl : MonoBehaviour {
 		BallPitch();
 		BallJump();
 
+
+		UpdateArrow();
      }
 
-    
+    void Update()
+    {
+    	
+    }
 
     void BallPitch()
     {
     	if(ballState == BallState.Rolling)
     	{
-
+    		//TODO: TOUCHPAD
     		float pitchInput = TouchPadInput.GetAxis("Horizontal");
 
+    		//TODO: KB&M
+			//float pitchInput = Input.GetAxis("Horizontal");
 
     		if(pitchInput > 0)
     			xPitch = Mathf.MoveTowards(xPitch, 3.0f, xPitchSensitivity);
@@ -181,40 +196,74 @@ public class BallControl : MonoBehaviour {
     	else if(ballState == BallState.Rolling)
     	{
 
-		if(!currentWaypoint) 
-			currentWaypoint = wpc.FirstWaypoint();
+			if(!currentWaypoint) 
+				currentWaypoint = wpc.FirstWaypoint();
 
-		else
-			currentWaypoint = wpc.NextWaypoint(currentWaypoint, transform.position);
+			else
+				currentWaypoint = wpc.NextWaypoint(currentWaypoint, transform.position);
 
-		Vector3 adjustedDirection;
-		if(!currentWaypoint.IsLast)
-		{
-	
-			adjustedDirection = new Vector3(currentWaypoint.transform.position.x - xPitch,
-				currentWaypoint.transform.position.y,
-				currentWaypoint.transform.position.z);
+			Vector3 adjustedDirection;
+			if(!currentWaypoint.IsLast)
+			{
+		
+				adjustedDirection = new Vector3(currentWaypoint.transform.position.x - xPitch,
+					currentWaypoint.transform.position.y,
+					currentWaypoint.transform.position.z);
 
-    	}
-    	else
-    	{
-			adjustedDirection = new Vector3(pinSet.transform.position.x - xPitch,
-				pinSet.transform.position.y,
-				pinSet.transform.position.z);
+	    	}
+	    	else
+	    	{
+				adjustedDirection = new Vector3(pinSet.transform.position.x - xPitch,
+					pinSet.transform.position.y,
+					pinSet.transform.position.z);
 
-    	}
+	    	}
 
-		Vector3 direction = adjustedDirection - transform.position;
+			Vector3 direction = adjustedDirection - transform.position;
 
-		rb.AddForce(direction * ballSettings.speed);
+			rb.AddForce(direction * ballSettings.speed);
 
-		ballState = BallState.Rolling;
+			ballState = BallState.Rolling;
 
 
-		if(debugBall.ShowNextWaypointLine) Debug.DrawRay(transform.position, direction, Color.green);
+			if(debugBall.ShowNextWaypointLine) Debug.DrawRay(transform.position, direction, Color.green);
 		}
     }
    
+
+   	void UpdateArrow()
+   	{
+   		
+   		if(ballState == BallState.Rolling && !arrowPointer.gameObject.activeInHierarchy)
+   		{
+   			arrowPointer.gameObject.SetActive(true);
+   			arrowPointer.transform.rotation = arrowOriginRotation;
+   		}
+   		else if(ballState == BallState.Rolling)
+		{
+
+			arrowPointer.transform.rotation = Quaternion.identity;
+			
+			arrowPointer.transform.position = transform.position + Vector3.up * (bounds.extents.y +0.2f);
+			
+
+			Vector3 targetDir = currentWaypoint.transform.position - arrowPointer.transform.position;
+	        float step = arrowDistance * Time.deltaTime;
+	        Vector3 newDir = Vector3.RotateTowards(-arrowPointer.transform.up, targetDir, step, 0.0F);
+	        Debug.DrawRay(arrowPointer.transform.position, newDir, Color.red);
+	        Quaternion targetRotation = Quaternion.LookRotation(newDir);
+
+			arrowPointer.transform.rotation = targetRotation;
+				//Quaternion.Slerp(arrowPointer.transform.rotation, targetRotation, Time.deltaTime * 2f);
+
+			
+		}
+		else
+		{
+			arrowPointer.gameObject.SetActive(false);
+		}
+
+   	}
 
     public void ResetBall()
     {

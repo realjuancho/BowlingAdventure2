@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 26849091e73be4bb7b9c3c1f888b85af
+timeCreated: 1483671094
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Ball
+    100002: //RootNode
+    100004: Plane
+    100006: Plane_001
+    100008: 1Player
+    100010: 2Players
+    100012: 3Players
+    100014: 4Players
+    100016: Ball001
+    100018: Ball002
+    100020: Ball003
+    100022: Ball004
+    100024: Ball005
+    100026: Ball006
+    100028: Ball007
+    100030: Ball008
+    100032: Ball009
+    100034: Ball010
+    100036: Ball011
+    100038: Ball012
+    100040: BallWheel
+    100042: BezierCircle
+    100044: Players_Wheel
+    400000: Ball
+    400002: //RootNode
+    400004: Plane
+    400006: Plane_001
+    400008: 1Player
+    400010: 2Players
+    400012: 3Players
+    400014: 4Players
+    400016: Ball001
+    400018: Ball002
+    400020: Ball003
+    400022: Ball004
+    400024: Ball005
+    400026: Ball006
+    400028: Ball007
+    400030: Ball008
+    400032: Ball009
+    400034: Ball010
+    400036: Ball011
+    400038: Ball012
+    400040: BallWheel
+    400042: BezierCircle
+    400044: Players_Wheel
+    2300000: Ball
+    2300002: Plane
+    2300004: Plane_001
+    2300006: 1Player
+    2300008: 2Players
+    2300010: 3Players
+    2300012: 4Players
+    2300014: Ball001
+    2300016: Ball002
+    2300018: Ball003
+    2300020: Ball004
+    2300022: Ball005
+    2300024: Ball006
+    2300026: Ball007
+    2300028: Ball008
+    2300030: Ball009
+    2300032: Ball010
+    2300034: Ball011
+    2300036: Ball012
+    2300038: BezierCircle
+    3300000: Ball
+    3300002: Plane
+    3300004: Plane_001
+    3300006: 1Player
+    3300008: 2Players
+    3300010: 3Players
+    3300012: 4Players
+    3300014: Ball001
+    3300016: Ball002
+    3300018: Ball003
+    3300020: Ball004
+    3300022: Ball005
+    3300024: Ball006
+    3300026: Ball007
+    3300028: Ball008
+    3300030: Ball009
+    3300032: Ball010
+    3300034: Ball011
+    3300036: Ball012
+    3300038: BezierCircle
+    4300000: Ball
+    4300002: Plane_001
+    4300004: Plane
+    4300006: BezierCircle
+    4300008: 4Players
+    4300010: 3Players
+    4300012: 2Players
+    4300014: 1Player
+    4300016: Ball003
+    4300018: Ball004
+    4300020: Ball005
+    4300022: Ball006
+    4300024: Ball007
+    4300026: Ball008
+    4300028: Ball009
+    4300030: Ball010
+    4300032: Ball011
+    4300034: Ball012
+    4300036: Ball001
+    4300038: Ball002
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,6 +9,8 @@ public class PinSet : MonoBehaviour {
 	List<PinPosition> pinPositions = new List<PinPosition>();
 
 	public bool BallInGoal;
+
+	public int DefeatedPins;
 	public int StandingPins;
 
 	// Use this for initialization
@@ -22,7 +24,9 @@ public class PinSet : MonoBehaviour {
 			PinPosition pin = new PinPosition(p, p.transform.position, p.transform.rotation);
 
 			pinPositions.Add(pin);
-		}	
+		}
+
+
 	}
 
 
@@ -38,6 +42,8 @@ public class PinSet : MonoBehaviour {
 		}
 
 		StandingPins = pinCount;
+
+		DefeatedPins = pinPositions.Count - StandingPins;
 	}
 
 	public void ResetPins()
@@ -48,6 +54,28 @@ public class PinSet : MonoBehaviour {
 			p.pin.transform.rotation = p.rotation;
 
 			p.pin.ResetPin();
+
+			p.pin.gameObject.SetActive(true);
+		}
+
+	}
+
+	public void CleanPins()
+	{
+		foreach(PinPosition p in pinPositions)
+		{
+
+			if(p.pin.pinState == Pin.PinState.Standing)
+			{
+				p.pin.transform.position = p.position;
+				p.pin.transform.rotation = p.rotation;
+
+				p.pin.ResetPin();
+			}
+			else
+			{
+				p.pin.gameObject.SetActive(false);
+			}
 		}
 
 	}
@@ -58,7 +86,7 @@ public class PinSet : MonoBehaviour {
 
 		if(ball)
 		{
-			Debug.Log("BallHasEntered");
+			//Debug.Log("BallHasEntered");
 			BallInGoal = true;
 		}
 	}
@@ -69,7 +97,7 @@ public class PinSet : MonoBehaviour {
 
 		if(ball)
 		{
-			Debug.Log("BallHasEntered");
+			//Debug.Log("BallHasEntered");
 			BallInGoal = false;
 		}
 	}

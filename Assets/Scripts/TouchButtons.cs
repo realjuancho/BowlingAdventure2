@@ -8,8 +8,9 @@ public class TouchButtons : MonoBehaviour {
 	// Use this for initialization
 
 	public string Name;
-	public Material pushedButtonMaterial;
 
+	public Material pushedButtonMaterial;
+	Animator buttonAnimator;
 
 	MeshRenderer meshRenderer;
 	Material originalMaterial;
@@ -21,8 +22,10 @@ public class TouchButtons : MonoBehaviour {
 	{
 		meshRenderer = GetComponent<MeshRenderer> ();
 
+		if(meshRenderer)
 		originalMaterial = meshRenderer.material;
 
+		buttonAnimator = GetComponent<Animator>();
 	}
 
 	void Update()
@@ -42,10 +45,13 @@ public class TouchButtons : MonoBehaviour {
 			if (pushedButtonMaterial)
 				meshRenderer.material = pushedButtonMaterial;
 
+			if (buttonAnimator)
+				buttonAnimator.SetTrigger("Push");
 
 		} else 
 		{
-			meshRenderer.material = originalMaterial;
+			if(meshRenderer)
+				meshRenderer.material = originalMaterial;
 		}
 		setTouched (false);
 	}

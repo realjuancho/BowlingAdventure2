@@ -39,7 +39,7 @@ public class Pin : MonoBehaviour {
 
 			if(Physics.Raycast(checkPinStateRay, out checkPinStateRayHit, 2.0f))
 			{
-				if(checkPinStateRayHit.collider.name == "PinCheck")
+				if(checkPinStateRayHit.collider.name == "PinCheck" && checkPinStateRayHit.transform.parent == gameObject.transform.parent)
 				{
 					pinState = PinState.Standing;
 
@@ -61,7 +61,7 @@ public class Pin : MonoBehaviour {
 			timeSincePinDefeated += Time.deltaTime;
 			if(timeSincePinDefeated >= maxColliderTimeSinceDefeated)
 			{
-				pincollider.enabled = false;
+				//pincollider.enabled = false;
 			}
 		}
 

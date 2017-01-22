@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ArrowPointer.cs" />
      <Compile Include="Assets\Scripts\BallControl.cs" />
      <Compile Include="Assets\Scripts\FollowBall.cs" />
      <Compile Include="Assets\Scripts\GameStateManager.cs" />
@@ -53,12 +54,28 @@
      <Compile Include="Assets\Scripts\OutOfBounds.cs" />
      <Compile Include="Assets\Scripts\Pin.cs" />
      <Compile Include="Assets\Scripts\PinSet.cs" />
+     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\ScoreUI.cs" />
+     <Compile Include="Assets\Scripts\SelectableItem.cs" />
+     <Compile Include="Assets\Scripts\SelectablePage.cs" />
+     <Compile Include="Assets\Scripts\SelectionCamera.cs" />
+     <Compile Include="Assets\Scripts\SelectionManager.cs" />
+     <Compile Include="Assets\Scripts\SettingsManager.cs" />
+     <Compile Include="Assets\Scripts\Slider3D.cs" />
      <Compile Include="Assets\Scripts\StartPosition.cs" />
      <Compile Include="Assets\Scripts\TouchButtons.cs" />
      <Compile Include="Assets\Scripts\TouchPadInput.cs" />
+     <Compile Include="Assets\Scripts\Utilities\DataAccess.cs" />
      <Compile Include="Assets\Scripts\Waypoint.cs" />
      <Compile Include="Assets\Scripts\WaypointCollection.cs" />
+     <Compile Include="Assets\Scripts\WheelSelector.cs" />
+     <Compile Include="Assets\Scripts\myCameraController.cs" />
+     <Compile Include="Assets\SelectionGroup.cs" />
+     <None Include="Assets\Materials\ToonBasic\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\Fonts\suissnord\readme.txt" />
+     <None Include="Assets\Materials\ToonBasic\ToonShading\Shaders\ToonBasicOutline.shader" />
+     <None Include="Assets\Materials\ToonBasic\ToonShading\Shaders\ToonLitOutline.shader" />
+     <None Include="Assets\Materials\ToonBasic\ToonShading\Shaders\ToonLit.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
